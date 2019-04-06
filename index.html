@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Martin Utama</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section class="intro">
+            <header>
+                <h1>Hi. I'm Martin Utama</h1>
+                <h2>A consultant & full stack software engineer based in Japan</h2>
+                <ul class="actions">
+                    <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <span class="image fill" data-position="center"><img src="images/architecture-blank-space-blue-sky-921294.jpg" alt="" /></span>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section id="first">
+            <header>
+                <h2>I'm Passionate</h2>
+            </header>
+            <div class="content">
+                <h2>... and Driven </h2>
+                <p>
+                    I have been coding since 2009 building front and back ends, Android apps, and cloud solutions. In the years when cryptocurrency took off, I forked Ripple system to build a private distributed exchange. Before I left the industry I developed trading bots for market making purpose. In my past time I write articles about sofware technologies and socialize at Stack OverFlow.
+                </p>
+                <p>
+                    <a id="no-underline" href="https://stackoverflow.com/users/1014413/inmyth"><img src="https://stackoverflow.com/users/flair/1014413.png?theme=clean" width="208" height="58" alt="profile for inmyth at Stack Overflow" title="profile for inmyth at Stack Overflow"></a>
+                </p>
+                <p>
+                    My current tech stack is Scala, Akka, Java, Node, Vue. I have worked with AWS, IBM, Google Cloud, Docker, Hadoop, and other "buzzword" technologies. However in the era of software revolution where things come and go fast what really valuable is the willingness to learn. I believe I wouldn't go far if I were stuck in a comfort zone. I'm always curious and strive to deliver the best solution for any software problem. Feel free to browse my portfolio or to <a href="#contact-me">contact me</a> to see how I can help you.
+                </p>
+
+            </div>
+        </section>
+
+				<section id="portfolio">
+            <header>
+                <h2>Portfolio</h2>
+								
+            </header>
+            <div class="content">
+                <h2>Market making bots</h2>
+                <p>
+                    Market making is a trading technique that places buy and sell orders simultaneously and profits from bid-offer spread. In short, buy low sell high. Automating the trades is the job for bot which requires speed and robustness. There are two bots developed for different protocols.
+                </p>
+
+                <h4>For Ripple network</h4>
+                <p><a href="https://ripple.com/">Ripple</a> blockchain allows trades of arbitrary assets. As such it can be deployed as off-the-shelves crypto exchange. This bot was built on behalf of such exchange to provide liquidity for its users to trade. It maintains in-memory states which are asynchronously modified by trades, cancellations, and other actions. <a href="https://github.com/inmyth/mmm-java">Source at Github</a></p>
+								<ul>
+									<li>Coded in Java</li>
+									<li>Worked with RxJava and synchronized blocks for concurrency</li>
+									<li>Operates on Ripple network with websocket</li>
+									<li>Features error failsafes to keep the bot running uninterrupted</li>
+								</ul>
+								
+		
+                <h4>For Private exchanges</h4>
+                <p>Similar to the first one but operates on private exchanges such as HitBTC, Okex, etc. As Java's synchronized was not sufficient for modern concurrency work, Scala and Akka was adopted. The move cut the development time to a few weeks. <a href="https://github.com/inmyth/akka-integrated-mmm">Source at Github</a>
+
+								<ul>
+									<li>Coded in Scala</li>
+									<li>Adopting Scala's functional programming resulted in reduced code base and complexity</li>
+									<li>Utilized Akka Actor for concurrency work</li>
+								</ul>
+								
+								<p>The video below illustrates the bot's account during operation on Ripple Net. It starts from seeding to countering trades and replacing consumed offers.
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/dth4D28p4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+								</p>
+								
+
+
+                <h2>Farming prediction app</h2>
+                <p>For farmers, maximizing profit isn't the same as maximizing yield. Although crops are restricted by season, there's a variation in timing influenced by demand that may result in better market price. This project was to predict potential opportunities (as well as losses) using mathematical tools and machine learning for agriculture region in Kyushu, Japan. It was supported by IBM and eventually acquired and co-developed with Softbank. <a href="http://www.maff.go.jp/j/seisan/gizyutu/hukyu/h_event/attach/pdf/smaforum-48.pdf">Press release by Japan Ministry of Agriculture and Fishery.</a></p>
+								
+								<ul>
+									<li>Built with Javascript, MySQL</li>
+									<li>Worked with IBM Bluemix cloud stacks</li>
+								</ul>
+								
+                <h2>Home monitoring app</h2>
+                <p>
+                    An app to manipulate home appliances as well as monitoring the surroundings, developed before IOT became a word. It features bi-directional stream capability between camera and Android devices essentially turning the system into a video telephone.
+                </p>
+								
+								<ul>
+									<li>Android 2.1</li>
+									<li>Implemented basic Voice over Internet Protocols (VOIP) for audio communication</li>
+									<li>Worked with MP4 and MJPEG for video stream</li>
+								</ul>
+								
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/skgIMYkldWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lUhgArKL7Gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="main"></iframe>
+
+            </div>
+        </section>
+				
+				
+        <!-- Section -->
+        <section id="articles">
+            <header>
+                <h2>Recent articles I authored</h2>
+            </header>
+            <div class="content">
+                <h2>An introduction to Vert.x, the fastest Java framework today</h2>
+                <p>
+                    Node.js is server framework that famously uses a single core to process million requests easily. JVM is Java Virtual Machine that distributes process among cores. What if those two are combined ? </p>
+                <p>
+                    Introducing Vert.x, a microservice framework that has been <a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=cl&test=fortune"> dominating performance benchmarks</a>. It is also very simple. Comparing it with de-facto Java frameworks like Spring or Play is like comparing a truck with a Ferrari. In this article I'm suggesting coupling Vert.x with Scala Future as it makes concurrency work a breeze. <a href="https://medium.freecodecamp.org/an-introduction-to-vert-x-the-fastest-java-framework-today-27d8661ceb14">Read the rest at FreeCodeCamp.</a>
+                </p>
+
+                <h2>If you’re still using Synchronized, you should try Akka Actor instead</h2>
+                <p>
+                    In the Java world, synchronized is the conventional way of doing concurrency. Looking in retrospect, it's probably one reason why people were scared of multi-threading. Synchronized is basically a locking mechanism to prevent multiple threads from modifying a state at the same time, a scenario knows as race condition. The problem is managing the lock is massively difficult. Actor is a concurrency model that solves this issue by lining up all inputs in a queue. As the messages are digested one-by-one the state can be altererd safely without the need for locks. <a href="https://medium.freecodecamp.org/still-using-synchronized-try-akka-actor-instead-ac2f2b22a9ed">Read the rest at FreeCodeCamp.</a>
+                </p>
+
+                <h2>Introduction to Blockhain</h2>
+                <p>
+                    Bitcoin, blockchain...all the things fueling crypto frenzy. Like probably half of the people on this planet, I too was drawn into it. This article was sort of a learning experience in my attempt to make sense of the technology. If I had to summarize the fundamentals of cryptocurrency in one word, it'd be "hash". It's amazing that someone, "Satoshi", managed to upend financial world with a simple property of hashing algorithm. <a href="https://www.linkedin.com/pulse/quick-introduction-blockchain-martin-utama/">Read the rest at Linkedin.</a>
+                </p>
+
+            </div>
+        </section>
+
+
+
+        <!-- Section -->
+        <section>
+            <header>
+                <h2 id="contact-me">Contact Me</h2>
+            </header>
+            <div class="content">
+								<p>I'm available for software development projects or consultation. Feel free to contact me.</p>
+                <ul class="items">
+                    <li>
+                        <h3>Email</h3>
+                        <a href="" mailto: martin.bcu@gmail.com ">martin.bcu@gmail.com</a>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons ">
+										<li><a href="https://www.linkedin.com/in/martinbcu/ " class="icon fa-linkedin "><span class="label ">LinkedIn</span></a></li>
+										<li><a href="https://github.com/inmyth " class="icon fa-github "><span class="label ">GitHub</span></a></li>
+										<li><a href="https://stackoverflow.com/users/1014413/inmyth " class="icon fa-stack-overflow "><span class="label ">Stack Overflow</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<footer>
+
+						</footer>
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright ">&copy; mbcu.me . All rights reserved. Credit to <a href="https://html5up.net ">HTML5 UP</a> for the cool website.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js "></script>
+			<script src="assets/js/jquery.scrolly.min.js "></script>
+			<script src="assets/js/browser.min.js "></script>
+			<script src="assets/js/breakpoints.min.js "></script>
+			<script src="assets/js/util.js "></script>
+			<script src="assets/js/main.js "></script>
+
+	</body>
+</html>
