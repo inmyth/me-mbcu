@@ -5,22 +5,22 @@
     <title>Martin Utama</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="A consultant and software engineer experienced in back - front end, Android, cloud, and cryptocurrency solutions. Available for work. 
-		" />
+    <meta name="description" content="A consultant and software engineer experienced in back - front end, Android, cloud, and cryptocurrency solutions. Available for work." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="assets/css/main.css" />
-		
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137898728-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137898728-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-			gtag('config', 'UA-137898728-1');
-		</script>
+        gtag('config', 'UA-137898728-1');
+    </script>
 
 </head>
 
@@ -63,7 +63,7 @@
             </div>
         </section>
 
-				<section id="portfolio">
+        <section id="portfolio">
             <header>
                 <h2>Portfolio</h2>
             </header>
@@ -75,74 +75,68 @@
 
                 <h4>For Ripple network</h4>
                 <p><a href="https://ripple.com/">Ripple</a> blockchain allows trades of arbitrary assets. As such it can be deployed as off-the-shelves crypto exchange. This bot was built on behalf of such exchange to provide liquidity for its users to trade. It maintains in-memory states which are asynchronously modified by trades, cancellations, and other actions. <a href="https://github.com/inmyth/mmm-java">Source at Github</a></p>
-								<ul>
-									<li>Coded in Java</li>
-									<li>Worked with RxJava and synchronized blocks for concurrency</li>
-									<li>Operates on Ripple network with websocket</li>
-									<li>Features error failsafes to keep the bot running uninterrupted</li>
-								</ul>
-								
-		
+                <ul>
+                    <li>Coded in Java</li>
+                    <li>Worked with RxJava and synchronized blocks for concurrency</li>
+                    <li>Operates on Ripple network with websocket</li>
+                    <li>Features error failsafes to keep the bot running uninterrupted</li>
+                </ul>
+
                 <h4>For Private exchanges</h4>
                 <p>Similar to the first one but operates on private exchanges such as HitBTC, Okex, etc. As Java's synchronized was not sufficient for modern concurrency work, Scala and Akka was adopted. The move cut the development time to a few weeks. <a href="https://github.com/inmyth/akka-integrated-mmm">Source at Github</a>
 
-								<ul>
-									<li>Coded in Scala</li>
-									<li>Adopting Scala's functional programming resulted in reduced code base and complexity</li>
-									<li>Utilized Akka Actor to simplify multi-threading arrangement</li>
-								</ul>
-								
-								<p>The video below illustrates the bot's account during operation on Ripple Net. It starts from seeding to countering trades and replacing consumed offers.
-								</p>
-								<p>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/dth4D28p4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
-								</p>
-								
-								
-								<h2>Item discovery app</h2>
-                <p>An app to search for product and service in an area. The core of the system is the new MySql 5.7 geospatial type that allows native query on geographic location. The system comprises of Android client, front and back ends deployed on Google Cloud. The back end in particular uses a combination of Vert.x and Scala to bring out the best between microservices, functional programming, and concurrency.</p>
-								
-								<ul>
-									<li>Android, Scala, Vert.x, Vue</li>
-									<li>Structuring MySQL database</li>
-									<li>Various Google API and GCP stacks</li>
-								</ul>
+                    <ul>
+                        <li>Coded in Scala</li>
+                        <li>Adopting Scala's functional programming resulted in reduced code base and complexity</li>
+                        <li>Utilized Akka Actor to simplify multi-threading arrangement</li>
+                    </ul>
 
-								<p>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/FlbnG9Ae2Ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</p>
+                    <p>The video below illustrates the bot's account during operation on Ripple Net. It starts from seeding to countering trades and replacing consumed offers.
+                    </p>
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dth4D28p4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
 
-                <h2>Farming prediction app</h2>
-                <p>For farmers, maximizing profit isn't the same as maximizing yield. Although crops are restricted by season, there's a variation in timing influenced by demand that may result in better market price. This project was to predict potential opportunities (as well as losses) using mathematical tools and machine learning for agriculture region in Kyushu, Japan. It was supported by IBM and eventually acquired and co-developed with Softbank. <a href="http://www.maff.go.jp/j/seisan/gizyutu/hukyu/h_event/attach/pdf/smaforum-48.pdf">Press release by Japan Ministry of Agriculture and Fishery.</a></p>
-								
-								<ul>
-									<li>Built with Javascript, MySQL</li>
-									<li>Worked with IBM Bluemix cloud stacks</li>
-								</ul>
-								
-								
-								
-								
-                <h2>Home monitoring app</h2>
-                <p>
-                    An app to manipulate home appliances as well as monitoring the surroundings, developed before IOT became a word. It features bi-directional stream capability between camera and Android devices essentially turning the system into a video telephone.
-                </p>
-								
-								<ul>
-									<li>Android 2.1</li>
-									<li>Implemented basic Voice over Internet Protocols (VOIP) for audio communication</li>
-									<li>Worked with MP4 and MJPEG for video stream</li>
-								</ul>
-								
-								<p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/skgIMYkldWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2>Item discovery app</h2>
+                    <p>An app to search for product and service in an area. The core of the system is the new MySql 5.7 geospatial type that allows native query on geographic location. The system comprises of Android client, front and back ends deployed on Google Cloud. The back end in particular uses a combination of Vert.x and Scala to bring out the best between microservices, functional programming, and concurrency.</p>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lUhgArKL7Gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="main"></iframe>
-								</p>
+                    <ul>
+                        <li>Android, Scala, Vert.x, Vue</li>
+                        <li>Structuring MySQL database</li>
+                        <li>Various Google API and GCP stacks</li>
+                    </ul>
+
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FlbnG9Ae2Ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+
+                    <h2>Farming prediction app</h2>
+                    <p>For farmers, maximizing profit isn't the same as maximizing yield. Although crops are restricted by season, there's a variation in timing influenced by demand that may result in better market price. This project was to predict potential opportunities (as well as losses) using mathematical tools and machine learning for agriculture region in Kyushu, Japan. It was supported by IBM and eventually acquired and co-developed with Softbank. <a href="http://www.maff.go.jp/j/seisan/gizyutu/hukyu/h_event/attach/pdf/smaforum-48.pdf">Press release by Japan Ministry of Agriculture and Fishery.</a></p>
+
+                    <ul>
+                        <li>Built with Javascript, MySQL</li>
+                        <li>Worked with IBM Bluemix cloud stacks</li>
+                    </ul>
+
+                    <h2>Home monitoring app</h2>
+                    <p>
+                        An app to manipulate home appliances as well as monitoring the surroundings, developed before IOT became a word. It features bi-directional stream capability between camera and Android devices essentially turning the system into a video telephone.
+                    </p>
+
+                    <ul>
+                        <li>Android 2.1</li>
+                        <li>Implemented basic Voice over Internet Protocols (VOIP) for audio communication</li>
+                        <li>Worked with MP4 and MJPEG for video stream</li>
+                    </ul>
+
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/skgIMYkldWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lUhgArKL7Gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="main"></iframe>
+                    </p>
             </div>
         </section>
-				
-				
+
         <!-- Section -->
         <section id="articles">
             <header>
@@ -169,48 +163,47 @@
             </div>
         </section>
 
-
-
         <!-- Section -->
         <section>
             <header>
                 <h2 id="contact-me">Contact Me</h2>
             </header>
             <div class="content">
-								<p>I'm available for software development projects or consultation. Feel free to contact me.</p>
-								<p>By the way my full name is Martin Budi Cahyadi Utama, but <strong>mbcu</strong> works better for many purposes.</p>
+                <p>I'm available for software development projects or consultation. Feel free to contact me.</p>
+                <p>By the way my full name is Martin Budi Cahyadi Utama, but <strong>mbcu</strong> works better for many purposes.</p>
                 <ul class="items">
                     <li>
                         <h3>Email</h3>
                         <a href="mailto: martin.bcu@gmail.com">martin.bcu@gmail.com</a>
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons ">
-										<li><a href="https://www.linkedin.com/in/martinbcu/ " class="icon fa-linkedin "><span class="label ">LinkedIn</span></a></li>
-										<li><a href="https://github.com/inmyth " class="icon fa-github "><span class="label ">GitHub</span></a></li>
-										<li><a href="https://stackoverflow.com/users/1014413/inmyth " class="icon fa-stack-overflow "><span class="label ">Stack Overflow</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<footer>
+                    </li>
+                    <li>
+                        <h3>Check also</h3>
+                        <ul class="icons ">
+                            <li><a href="https://www.linkedin.com/in/martinbcu/ " class="icon fa-linkedin "><span class="label ">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/inmyth " class="icon fa-github "><span class="label ">GitHub</span></a></li>
+                            <li><a href="https://stackoverflow.com/users/1014413/inmyth " class="icon fa-stack-overflow "><span class="label ">Stack Overflow</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <footer>
 
-						</footer>
-					</section>
+            </footer>
+        </section>
 
-				<!-- Copyright -->
-					<div class="copyright ">&copy; mbcu.me . All rights reserved. Credit to <a href="https://html5up.net ">HTML5 UP</a> for the cool website.</div>
+        <!-- Copyright -->
+        <div class="copyright ">&copy; mbcu.me . All rights reserved. Credit to <a href="https://html5up.net ">HTML5 UP</a> for the cool website.</div>
 
-			</div>
+    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js "></script>
-			<script src="assets/js/jquery.scrolly.min.js "></script>
-			<script src="assets/js/browser.min.js "></script>
-			<script src="assets/js/breakpoints.min.js "></script>
-			<script src="assets/js/util.js "></script>
-			<script src="assets/js/main.js "></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/jquery.scrolly.min.js "></script>
+    <script src="assets/js/browser.min.js "></script>
+    <script src="assets/js/breakpoints.min.js "></script>
+    <script src="assets/js/util.js "></script>
+    <script src="assets/js/main.js "></script>
 
-	</body>
+</body>
+
 </html>
