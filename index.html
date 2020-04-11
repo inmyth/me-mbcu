@@ -1,213 +1,253 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>mbcu.me</title>
+        <meta name="description" content="Martin Utama Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,700" rel="stylesheet" type="text/css">
+        <link href="css/font-sourcesanspro.css" rel="stylesheet" type="text/css">
 
-<head>
-    <title>Martin Utama</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="A consultant and software engineer experienced in back - front end, Android, cloud, and cryptocurrency solutions. Available for work." />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137898728-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-137898728-1');
-    </script>
-
-</head>
-
-<body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Intro -->
-        <section class="intro">
-            <header>
-                <h1>Hi. I'm Martin</h1>
-                <h2>A consultant & full stack software engineer based in Japan</h2>
-                <ul class="actions">
-                    <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-                </ul>
-            </header>
-            <div class="content">
-                <span class="image fill" data-position="center"><img src="images/architecture-blank-space-blue-sky-921294.jpg" alt="" /></span>
-            </div>
-        </section>
-
-        <!-- Section -->
-        <section id="first">
-            <header>
-                <h2>I'm Passionate</h2>
-            </header>
-            <div class="content">
-                <h2>... and Driven </h2>
-                <p>
-                     I've building full stack, Android and system apps since 2009. During Bitcoin boom I was busy hacking Ripple blockchain.   
-                </p>
-                <p>
-                    <a id="no-underline" href="https://stackoverflow.com/users/1014413/inmyth"><img src="https://stackoverflow.com/users/flair/1014413.png?theme=clean" width="208" height="58" alt="profile for inmyth at Stack Overflow" title="profile for inmyth at Stack Overflow"></a>
-                </p>
-                <p>
-                    I currently code in Scala, sometimes Java and JS. There are countless stacks and frameworks I have worked with: Vue, Docker, Hadoop, Kafka, AWS and GCP stuff, etc. But in the era of software revolution where things come and go fast I believe what matters is adaptability. I wouldn't go far if I were stuck in a comfort zone. I'm always curious and eager to learn to face any challenges. Feel free to browse my portfolio or to <a href="#contact-me">contact me</a> to see how I can help you.
-                </p>
-
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <header>
-                <h2>Portfolio</h2>
-            </header>
-            <div class="content">
-                <h2>Market making bots</h2>
-                <p>
-                    Market making is a trading technique that places buy and sell orders simultaneously and profits from bid-offer spread. In short, buy low sell high. Automating the trades is the job for bot which requires speed and robustness. There were two bots developed:
-                </p>
-
-                <h4>For Ripple network</h4>
-                <p><a href="https://ripple.com/">Ripple</a> blockchain allows trades of arbitrary assets. As such it can be deployed as off-the-shelves crypto exchange. This bot was built on behalf of such exchange to provide liquidity for its users to trade. It maintains in-memory states which are asynchronously modified by trades, cancellations, and other actions. <a href="https://github.com/inmyth/mmm-java">Source at Github</a></p>
-                <ul>
-                    <li>Coded in Java</li>
-                    <li>Worked with RxJava and synchronized blocks for concurrency</li>
-                    <li>Operates on Ripple network with websocket</li>
-                    <li>Features error failsafes to keep the bot running uninterrupted</li>
-                </ul>
-
-                <h4>For independent exchanges</h4>
-                <p>Similar to the first one but operates on crypto exchanges such as HitBTC, Okex, etc. <a href="https://github.com/inmyth/akka-integrated-mmm">Source at Github</a>
-
-                    <ul>
-                        <li>Coded in Scala</li>
-                        <li>Adopting Scala's functional programming resulted in reduced code base and complexity</li>
-                        <li>Utilized Akka Actor to simplify multi-threading arrangement</li>
-                    </ul>
-
-                    <p>The video below illustrates the bot's account during operation on Ripple Net. It starts from seeding to countering trades and replacing consumed offers.
-                    </p>
-                    <p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dth4D28p4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </p>
-
-                    <h2>Item discovery app</h2>
-                    <p>An app to search for product and service in an area. The core of the system is the new MySql 5.7 geospatial type that allows native query on geographic location. The system comprises of Android client and cloud-based full stack. The back-end in particular makes use of Vert.x and Scala for speed and simplicity.</p>
-
-                    <ul>
-                        <li>Android, Scala, Vert.x, Vue</li>
-                        <li>Structuring MySQL database</li>
-                        <li>Various Google API and GCP stacks</li>
-                    </ul>
-
-                    <p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FlbnG9Ae2Ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </p>
-
-                    <h2>Farming prediction app</h2>
-                    <p>For farmers, maximizing profit isn't the same as maximizing yield. Although crops are restricted by season, there's a variation in timing influenced by demand that may result in better market price. This project was to predict potential opportunities (as well as losses) using mathematical tools and machine learning for agriculture region in Kyushu, Japan. It was supported by IBM and eventually acquired and co-developed with Softbank. <a href="http://www.maff.go.jp/j/seisan/gizyutu/hukyu/h_event/attach/pdf/smaforum-48.pdf">Press release by Japan Ministry of Agriculture and Fishery.</a></p>
-
-                    <ul>
-                        <li>Built with Javascript, MySQL</li>
-                        <li>Worked with IBM Bluemix cloud stacks</li>
-                    </ul>
-
-                    <h2>Home monitoring app</h2>
-                    <p>
-                        An app to manipulate home appliances as well as monitoring the surroundings, developed before IOT became a word. It features bi-directional stream capability between camera and Android devices  allowing Skype-like telephony.
-                    </p>
-
-                    <ul>
-                        <li>Android 2.1</li>
-                        <li>Implemented basic Voice over Internet Protocols (VOIP) for audio communication</li>
-                        <li>Worked with MP4 and MJPEG for video stream</li>
-                    </ul>
-
-                    <p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/skgIMYkldWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lUhgArKL7Gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="main"></iframe>
-                    </p>
-            </div>
-        </section>
-
-        <!-- Section -->
-        <section id="articles">
-            <header>
-                <h2>Recent articles authored</h2>
-            </header>
-            <div class="content">
-								<h2>Futures Made Easy with Scala</h2>
-                <p>
-                    Concurrency is never easy to work with. But not with Scala. Unlike other languages, Scala Futures enables composition of sequential or parallel asynchronous executions easily. <a href="https://medium.com/free-code-camp/futures-made-easy-with-scala-da1beb3bb281">Read the rest at FreeCodeCamp.</a></p>
-										
-                <h2>An introduction to Vert.x, the fastest Java framework today</h2>
-                <p>
-                    Node.js is server framework that famously uses a single core to process million requests easily. JVM is Java Virtual Machine that distributes process among cores. What if those two are combined ? </p>
-                <p>
-                    Introducing Vert.x, a microservice framework that has been <a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=cl&test=fortune"> dominating performance benchmarks</a>. It is also very simple. Comparing it with de-facto Java frameworks like Spring or Play is like comparing a truck with a Ferrari. In this article I'm suggesting coupling Vert.x with Scala Future as it makes concurrency work a breeze. <a href="https://medium.com/free-code-camp/an-introduction-to-vert-x-the-fastest-java-framework-today-27d8661ceb14">Read the rest at FreeCodeCamp.</a>
-                </p>
-
-                <h2>If you’re still using Synchronized, you should try Akka Actor instead</h2>
-                <p>
-                    In the Java world, synchronized is the conventional way of doing concurrency. Looking in retrospect, it's probably one reason why people were scared of multi-threading. Synchronized is basically a locking mechanism to prevent multiple threads from modifying a state at the same time, a scenario knows as race condition. The problem is managing the lock is massively difficult. Actor is a concurrency model that solves this issue by lining up all inputs in a queue. As the messages are digested one-by-one the state can be altererd safely without the need for locks. <a href="https://medium.com/free-code-camp/still-using-synchronized-try-akka-actor-instead-ac2f2b22a9ed">Read the rest at FreeCodeCamp.</a>
-                </p>
-
-                <h2>Introduction to Blockhain</h2>
-                <p>
-                    Bitcoin, blockchain...all the things fueling crypto frenzy. Like probably half of the people on this planet, I too was drawn into it. This article was sort of a learning experience in my attempt to make sense of the technology. If I had to summarize the fundamentals of cryptocurrency in one word, it'd be "hash". It's amazing that someone, "Satoshi", managed to upend financial world with a simple property of hashing algorithm. <a href="https://www.linkedin.com/pulse/quick-introduction-blockchain-martin-utama/">Read the rest at Linkedin.</a>
-                </p>
-
-            </div>
-        </section>
-
-        <!-- Section -->
-        <section>
-            <header>
-                <h2 id="contact-me">Contact Me</h2>
-            </header>
-            <div class="content">
-                <p>I'm available for software development projects or consultation. Feel free to contact me.</p>
-                <p>By the way my full name is Martin Budi Cahyadi Utama, but <strong>mbcu</strong> works better for many purposes.</p>
-                <ul class="items">
-                    <li>
-                        <h3>Email</h3>
-                        <a href="mailto: martin.bcu@gmail.com">martin@mbcu.me</a>
-                    </li>
-                    <li>
-                        <h3>Check also</h3>
-                        <ul class="icons ">
-                            <li><a href="https://www.linkedin.com/in/martinbcu/ " class="icon fa-linkedin "><span class="label ">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/inmyth " class="icon fa-github "><span class="label ">GitHub</span></a></li>
-                            <li><a href="https://stackoverflow.com/users/1014413/inmyth " class="icon fa-stack-overflow "><span class="label ">Stack Overflow</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <footer>
-
+    </head>
+    <body data-smooth-scroll-offset="77">
+        <div class="nav-container"> </div>
+        <div class="main-container">
+            <section class="imageblock switchable height-100">
+                <div class="imageblock__content col-lg-6 col-md-4 pos-right">
+                    <div class="background-image-holder"> <img alt="image" src="img/architecture-blur-bright-building-440313.jpg"> </div>
+                </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-7">
+                            <h1>Martin Utama<br></h1>
+                            <p class="lead">I'm a software engineer based in Japan. My specialization is functional programming and concurrency.</p>
+                            <p class="lead"><b>What does it mean ?</b><br></p>
+                            <p class="lead">In short I work to improve software that suffers from poor maintainability, performance as well as inability to scale. For example, a backend service that breaks down due to massive amount of data it has to process.</p>
+                            <div class="row align-items-center">
+								<div class="col-md-6 col-6">
+									<p> <a target="_blank" href="https://stackoverflow.com/users/1014413/inmyth"><img src="https://stackoverflow.com/users/flair/1014413.png" width="208" height="58" alt="profile for inmyth at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for inmyth at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a></p>
+								</div>
+								<div class="col-md-6 col-lg-6">
+									<p><a target="_blank" href="https://www.youracclaim.com/badges/3c2268c1-abbc-4bc3-8ad0-d8fa3204318a"><img border="0" alt="Oracle Associate" src="img/Oracle-Certification-badge_OC-Associate.png" width="auto" height="100"></a></p>
+								</div>
+							</div>
+							<p class="lead">I code in Scala, Java, and Javascript. Over the years I have also developed Android, web, cryptocurrency applications, among other things. Feel free to contact me to see how I can help you. </p>
+                            <a class="btn btn--primary type--uppercase" href="mailto:martin@mbcu.me" target="_blank"> <span class="btn__text">&nbsp; Contact me
+					</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>Why functional ?<br></h2>
+                            <p class="lead">In today's world big data is a necessity. It is also presenting us with engineering issues we didn't foresee: storage, transfer, etc. To deal with it old imperative programming approach is not sufficient as it depends on mutable states which lead to untraceable bugs and code mess.<br><img src="data:text/html;base64,PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICAgIDxoZWFkPgogICAgICAgIDxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KICAgICAgICA8dGl0bGU+bWJjdS5tZTwvdGl0bGU+CiAgICAgICAgPG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9Ik1hcnRpbiBVdGFtYSBQb3J0Zm9saW8iIC8+CiAgICAgICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPgogICAgICAgIDxsaW5rIGhyZWY9ImNzcy9zb2NpY29uLmNzcyIgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgbWVkaWE9ImFsbCIgLz4KICAgICAgICA8bGluayBocmVmPSJjc3MvYm9vdHN0cmFwLmNzcyIgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgbWVkaWE9ImFsbCIgLz4KICAgICAgICA8bGluayBocmVmPSJjc3Mvc3RhY2staW50ZXJmYWNlLmNzcyIgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgbWVkaWE9ImFsbCIgLz4KICAgICAgICA8bGluayBocmVmPSJjc3MvdGhlbWUuY3NzIiByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBtZWRpYT0iYWxsIiAvPgogICAgICAgIDxsaW5rIGhyZWY9ImNzcy9jdXN0b20uY3NzIiByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBtZWRpYT0iYWxsIiAvPgogICAgICAgIDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1PcGVuK1NhbnM6MjAwLDMwMCw0MDAsNDAwaSw1MDAsNjAwLDcwMCIgcmVsPSJzdHlsZXNoZWV0Ij4KICAgICAgICA8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9U291cmNlK1NhbnMrUHJvOjIwMCwzMDAsNDAwLDQwMGksNjAwLDcwMCIgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyI+CiAgICAgICAgPGxpbmsgaHJlZj0iY3NzL2ZvbnQtc291cmNlc2Fuc3Byby5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPgoKICAgIDwvaGVhZD4KICAgIDxib2R5IGRhdGEtc21vb3RoLXNjcm9sbC1vZmZzZXQ9Ijc3Ij4KICAgICAgICA8ZGl2IGNsYXNzPSJuYXYtY29udGFpbmVyIj4gPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0ibWFpbi1jb250YWluZXIiPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iaW1hZ2VibG9jayBzd2l0Y2hhYmxlIGhlaWdodC0xMDAiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW1hZ2VibG9ja19fY29udGVudCBjb2wtbGctNiBjb2wtbWQtNCBwb3MtcmlnaHQiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJhY2tncm91bmQtaW1hZ2UtaG9sZGVyIj4gPGltZyBhbHQ9ImltYWdlIiBzcmM9ImltZy9hcmNoaXRlY3R1cmUtYmx1ci1icmlnaHQtYnVpbGRpbmctNDQwMzEzLmpwZyI+IDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIgcG9zLXZlcnRpY2FsLWNlbnRlciI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icm93Ij4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLWxnLTUgY29sLW1kLTciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgxPk1hcnRpbiBVdGFtYTxicj48L2gxPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImxlYWQiPkknbSBhIHNvZnR3YXJlIGVuZ2luZWVyIGJhc2VkIGluIEphcGFuLiBNeSBzcGVjaWFsaXphdGlvbiBpcyBmdW5jdGlvbmFsIHByb2dyYW1taW5nIGFuZCBjb25jdXJyZW5jeS48L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0ibGVhZCI+PGI+V2hhdCBkb2VzIGl0IG1lYW4gPzwvYj48YnI+PC9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImxlYWQiPkluIHNob3J0IEkgd29yayB0byBpbXByb3ZlIHNvZnR3YXJlIHRoYXQgc3VmZmVycyBmcm9tIHBvb3IgbWFpbnRhaW5hYmlsaXR5LCBwZXJmb3JtYW5jZSBhcyB3ZWxsIGFzIGluYWJpbGl0eSB0byBzY2FsZS4gRm9yIGV4YW1wbGUsIGEgYmFja2VuZCBzZXJ2aWNlIHRoYXQgYnJlYWtzIGRvd24gZHVlIHRvIG1hc3NpdmUgYW1vdW50IG9mIGRhdGEgaXQgaGFzIHRvIHByb2Nlc3MuPC9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImxlYWQiPkkgY29kZSBpbiBTY2FsYSwgSmF2YSwgYW5kIEphdmFzY3JpcHQuIE92ZXIgdGhlIHllYXJzIEkgaGF2ZSBhbHNvIGRldmVsb3BlZCBBbmRyb2lkLCB3ZWIsIGNyeXB0b2N1cnJlbmN5IGFwcGxpY2F0aW9ucywgYW1vbmcgb3RoZXIgdGhpbmdzLiBGZWVsIGZyZWUgdG8gYnJvd3NlIG15IHBvcnRmb2xpbyBvciB0byBjb250YWN0IG1lIHRvIHNlZSBob3cgSSBjYW4gaGVscCB5b3UuIDwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzPSJidG4gYnRuLS1wcmltYXJ5IHR5cGUtLXVwcGVyY2FzZSIgaHJlZj0ibWFpbHRvOm1hcnRpbkBtYmN1Lm1lIiB0YXJnZXQ9Il9ibGFuayI+IDxzcGFuIGNsYXNzPSJidG5fX3RleHQiPiZuYnNwOyBDb250YWN0IG1lCgkJCQkJPC9zcGFuPiA8L2E+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImJnLS1zZWNvbmRhcnkiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtbWQtMTAgY29sLWxnLTgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgyPldoeSBmdW5jdGlvbmFsID88YnI+PC9oMj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJsZWFkIj5JbiB0b2RheSdzIHdvcmxkIGJpZyBkYXRhIGlzIGEgbmVjZXNzaXR5LiBJdCBpcyBhbHNvIHByZXNlbnRpbmcgdXMgd2l0aCBlbmdpbmVlcmluZyBpc3N1ZXMgd2UgZGlkbid0IGZvcmVzZWU6IHN0b3JhZ2UsIHRyYW5zZmVyLCBldGMuIFRvIGRlYWwgd2l0aCBpdCBvbGQgaW1wZXJhdGl2ZSBwcm9ncmFtbWluZyBhcHByb2FjaCBpcyBub3Qgc3VmZmljaWVudCBhcyBpdCBkZXBlbmRzIG9uIG11dGFibGUgc3RhdGVzIHdoaWNoIGxlYWQgdG8gdW50cmFjZWFibGUgYnVncyBhbmQgY29kZSBtZXNzLjxicj48YnI+RnVuY3Rpb25hbCBhcHByb2FjaCBoZWxwcyB1cyB2aXN1YWxpemUgdGhlIHNvbHV0aW9uIGFzIGEgc2VyaWVzIG9mIGRpc2NyZXRlIGNvbnRyb2xzLCBldmVuIGlmIHRoZSB1bmRlcmx5aW5nIGV2ZW50cyBhcmUgYXN5bmNocm9ub3VzLiBTbyBpZiBkYXRhIGlzIGEgcml2ZXIsIHRoZSBzb2x1dGlvbiB3b3VsZCBiZSBkYW1zLiBJbiBmYWN0IGl0IGlzIHF1aXRlIGNvbW1vbiB0byByZWZlciB0byBzdWNoIHBhcmFkaWdtIGFzIHN0cmVhbS48YnI+IDxicj5IZXJlIGFyZSBzb21lIG9mIHRoZSBhZHZhbnRhZ2VzIGl0IGJyaW5ncy4gPGJyPjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0ic3dpdGNoYWJsZSBmZWF0dXJlLWxhcmdlIGJnLS1zZWNvbmRhcnkiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3cganVzdGlmeS1jb250ZW50LWJldHdlZW4gYWxpZ24taXRlbXMtY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTYgY29sLTEyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InZpZGVvLWNvdmVyIGJvcmRlci0tcm91bmQgYm94LXNoYWRvdy13aWRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiYWNrZ3JvdW5kLWltYWdlLWhvbGRlciI+IDxpbWcgYWx0PSJpbWFnZSIgc3JjPSJpbWcvU2NyZWVuc2hvdF8yMDIwLTA0LTEwIFN0cmVhbWluZyB2cyBSZWFkaW5nLnBuZyI+IDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InZpZGVvLXBsYXktaWNvbiI+PC9kaXY+IDxpZnJhbWUgZGF0YS1zcmM9Imh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL2VtYmVkL0hKT2RJSGJMWFcwP2F1dG9wbGF5PTEiIGFsbG93ZnVsbHNjcmVlbj0iYWxsb3dmdWxsc2NyZWVuIj48L2lmcmFtZT4gPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtbWQtNiBjb2wtbGctNSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzd2l0Y2hhYmxlX190ZXh0Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDI+TWVtb3J5IGVmZmljaWVuY3k8YnI+PC9oMj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0ibGVhZCI+T25lIGltbWVkaWF0ZSBpc3N1ZSBvZiB3b3JraW5nIHdpdGggYmlnIGRhdGEgaXMgdGhhdCB0aGVyZSBpcyBubyBtYWNoaW5lIGxhcmdlIGVub3VnaCB0byBsb2FkIGl0LiBXaGF0IHBlb3BsZSBvZnRlbiBkbyBpcyBicmVhayB1cCB0aGUgZGF0YSB0byBzbWFsbGVyIGNodW5rcyB3aGljaCBpbiB0dXJuIGNhdXNlcyBtYW5hZ2VtZW50IGhlYWRhY2hlLiA8YnI+PGJyPlRoaXMgdmlkZW8gY29tcGFyZXMgdGhlIG9sZCBhcHByb2FjaCBhbmQgdGhlIG5ldyBmdW5jdGlvbmFsIHN0cmVhbSB3aXRoIEphdmEgVmF2ciB0byBsb2FkIGEgdmVyeSBsYXJnZSBmaWxlLiBJbiB0aGUgZmlyc3QgcGFydCwgYWxsIGF2YWlsYWJsZSBtZW1vcnkgaXMgY29uc3VtZWQgcXVpY2tseSBhbmQgdGhlIHByb2dyYW0gY3Jhc2hlcy4gQnV0IGluIHRoZSBzZWNvbmQsIG1lbW9yeSBjb25zdW1wdGlvbiBpcyBrZXB0IHVuZGVyIGNvbnRyb2wuIFRoaXMgYWxsb3dzIHVzIHRvIHVzZSBhIHNtYWxsIHNlcnZlciB0byBwcm9jZXNzIHZlcnkgbGFyZ2UgZGF0YS4gPGJyPjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJzd2l0Y2hhYmxlIGZlYXR1cmUtbGFyZ2UgYmctLXNlY29uZGFyeSI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyBqdXN0aWZ5LWNvbnRlbnQtYmV0d2VlbiBhbGlnbi1pdGVtcy1jZW50ZXIiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtbWQtNiBjb2wtMTIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmlkZW8tY292ZXIgYm9yZGVyLS1yb3VuZCBib3gtc2hhZG93LXdpZGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJhY2tncm91bmQtaW1hZ2UtaG9sZGVyIj4gPGltZyBhbHQ9ImltYWdlIiBzcmM9ImltZy9mdW5jdGlvbi5qcGciPiA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ2aWRlby1wbGF5LWljb24iPjwvZGl2PiA8aWZyYW1lIGRhdGEtc3JjPSJodHRwOi8vd2VibXNoYXJlLmNvbS9wbGF5L1B4ZDYwIiBhbGxvd2Z1bGxzY3JlZW49ImFsbG93ZnVsbHNjcmVlbiI+PC9pZnJhbWU+IDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTYgY29sLWxnLTUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3dpdGNoYWJsZV9fdGV4dCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgyPlNwb3QgcmVjb3Zlcnk8YnI+PC9oMj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0ibGVhZCI+IEltYWdpbmUgZG9pbmcgYSB0aG91c2FuZCBvZiBkYXRhYmFzZSBxdWVyaWVzIG9yIEFQSSBjYWxscyBhbmQgYSBuZXR3b3JrIGZhaWx1cmUgb2NjdXJzLiBBbG1vc3QgYWxsIHRoZSB0aW1lIHRoaXMgd2lsbCBlbmQgaW4gdGhlIHdob2xlIHByb2Nlc3MgYmVpbmcgcmVzdGFydGVkLCB3YXN0aW5nIGhvdXJzIGlmIG5vdCBkYXlzLiZuYnNwOzxicj48YnI+TW9kZXJuIHJlYWN0aXZlIGxpYnJhcmllcyBsaWtlIE1vbml4IGhhdmUgYSBmdW5jdGlvbmFsaXR5IHRoYXQgbWFrZXMgc3BvdCByZWNvdmVyeSBlYXN5LiBUaGUgdmlkZW8gaGVyZSBzaG93cyBob3cgYSBsaXN0IG9mIGZpdmUgZWxlbWVudHMgaXMgc3RyZWFtZWQuIFRoZSBwcm9ncmFtIHJldHJpZXMgYSBmYWlsZWQgcHJvY2VzcyBhdCBtb3N0IHRocmVlIHRpbWVzIG9yIGl0IHdpbGwgZ2l2ZSB1cCBhbmQgcHJvY2VlZCB0byB0aGUgbmV4dCBlbGVtZW50ICg8YSBocmVmPSJodHRwczovL2dpc3QuZ2l0aHViLmNvbS9pbm15dGgvN2UxNjQ3MDIyMzcwZGNhNWI1NTNhMDkwYWM0ZDJiOTQiPnNvdXJjZSBjb2RlPC9hPikuIDxicj48YnI+PC9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9InRleHQtY2VudGVyIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icm93Ij4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTEwIGNvbC1sZy04Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5Qcm9qZWN0czwvaDI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0ibGVhZCI+PGJyPjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0ic3dpdGNoYWJsZSBmZWF0dXJlLWxhcmdlIHN3aXRjaGFibGUtLXN3aXRjaCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyBqdXN0aWZ5LWNvbnRlbnQtYmV0d2VlbiBhbGlnbi1pdGVtcy1jZW50ZXIiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtbWQtNiBjb2wtMTIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmlkZW8tY292ZXIgYm9yZGVyLS1yb3VuZCBib3gtc2hhZG93LXdpZGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJhY2tncm91bmQtaW1hZ2UtaG9sZGVyIj4gPGltZyBhbHQ9ImltYWdlIiBzcmM9ImltZy9tYXJrZXRfbWFrZS5wbmciPiA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ2aWRlby1wbGF5LWljb24iPjwvZGl2PiA8aWZyYW1lIGRhdGEtc3JjPSJodHRwczovL3d3dy55b3V0dWJlLmNvbS9lbWJlZC9kdGg0RDI4cDR6az9hdXRvcGxheT0xIiBhbGxvd2Z1bGxzY3JlZW49ImFsbG93ZnVsbHNjcmVlbiI+PC9pZnJhbWU+IDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTYgY29sLWxnLTUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3dpdGNoYWJsZV9fdGV4dCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgyPk1hcmtldC1tYWtpbmcgYm90czxicj48L2gyPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJsZWFkIj4gTWFya2V0IG1ha2luZyBpcyBhIHRyYWRpbmcgdGVjaG5pcXVlIHRoYXQgcGxhY2VzIGJ1eSBhbmQgc2VsbCBvcmRlcnMgY29udGludW9zbHkgYW5kIHByb2ZpdHMgZnJvbSBiaWQtb2ZmZXIgc3ByZWFkLiBBdXRvbWF0aW5nIHRoZSB0cmFkZXMgaXMgdGhlIGpvYiBmb3IgYm90LiA8YnI+VGhlc2UgYm90cyB3ZXJlIGRldmVsb3BlZCB0byB0cmFkZSBjcnlwdG9jdXJyZW5jaWVzLCA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vaW5teXRoL21tbS1qYXZhIj5vbmU8L2E+IHRvIG9wZXJhdGUgb24gUmlwcGxlIG5ldHdvcmsgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL2lubXl0aC9ha2thLWludGVncmF0ZWQtbW1tIj50aGUgb3RoZXI8L2E+IG9uIGNlbnRyYWxpemVkIGV4Y2hhbmdlcyBzdWNoIGFzIEhpdEJUQyBhbmQgT2tleC4mbmJzcDsgPGJyPlRoZSB2aWRlbyBoZXJlIGlsbHVzdHJhdGVzIHRoZSBib3QncyBhY2NvdW50IGR1cmluZyBvcGVyYXRpb24gb24gUmlwcGxlIG5ldHdvcmsgLiBJdCBzdGFydHMgZnJvbSBzZWVkaW5nIHRvIGNvdW50ZXJpbmcgdHJhZGVzIGFuZCByZXBsYWNpbmcgY29uc3VtZWQgb2ZmZXJzLiA8YnI+PGJyPjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJzd2l0Y2hhYmxlIGZlYXR1cmUtbGFyZ2UiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3cganVzdGlmeS1jb250ZW50LWJldHdlZW4gYWxpZ24taXRlbXMtY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTYgY29sLTEyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InZpZGVvLWNvdmVyIGJvcmRlci0tcm91bmQgYm94LXNoYWRvdy13aWRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiYWNrZ3JvdW5kLWltYWdlLWhvbGRlciI+IDxpbWcgYWx0PSJpbWFnZSIgc3JjPSJpbWcvbWFydGlwbHkucG5nIj4gPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmlkZW8tcGxheS1pY29uIj48L2Rpdj4gPGlmcmFtZSBkYXRhLXNyYz0iaHR0cHM6Ly93d3cueW91dHViZS5jb20vZW1iZWQvRmxibkc5QWUyQW8/YXV0b3BsYXk9MSIgYWxsb3dmdWxsc2NyZWVuPSJhbGxvd2Z1bGxzY3JlZW4iPjwvaWZyYW1lPiA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC02IGNvbC1sZy01Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN3aXRjaGFibGVfX3RleHQiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5JdGVtIGRpc2NvdmVyeSBhcHA8L2gyPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJsZWFkIj5TZWFyY2hlcyBmb3IgYSBwcm9kdWN0IG9yIHNlcnZpY2UgaW4gYW4gYXJlYS4gVGhlIGFwcCBpbnRlZ3JhdGVzIEFuZHJvaWQgY2xpZW50LCBiYWNrZW5kIHNlcnZpY2UsIGFuZCB2YXJpb3VzIGNsb3VkIGNvbXBvbmVudHMuIFRoZSBxdWVyeSBpdHNlbGYgbWFrZXMgZ29vZCB1c2Ugb2YgdGhlIG5ldyBnZW9zcGF0aWFsIGZlYXR1cmUgb2YgTXlTcWwuIDxicj48L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0ic3dpdGNoYWJsZSBmZWF0dXJlLWxhcmdlIHN3aXRjaGFibGUtLXN3aXRjaCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyBqdXN0aWZ5LWNvbnRlbnQtYmV0d2VlbiBhbGlnbi1pdGVtcy1jZW50ZXIiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtbWQtNiBjb2wtMTIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmlkZW8tY292ZXIgYm9yZGVyLS1yb3VuZCBib3gtc2hhZG93LXdpZGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJhY2tncm91bmQtaW1hZ2UtaG9sZGVyIj4gPGltZyBhbHQ9ImltYWdlIiBzcmM9ImltZy90ZXJyYWNlX21pbGUucG5nIj4gPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmlkZW8tcGxheS1pY29uIj48L2Rpdj4gPGlmcmFtZSBkYXRhLXNyYz0iaHR0cHM6Ly93d3cueW91dHViZS5jb20vZW1iZWQvWFpZRzAwSGJkQUk/YXV0b3BsYXk9MSIgYWxsb3dmdWxsc2NyZWVuPSJhbGxvd2Z1bGxzY3JlZW4iPjwvaWZyYW1lPiA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC02IGNvbC1sZy01Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN3aXRjaGFibGVfX3RleHQiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5ZaWVsZCBwcmVkaWN0b3IgPGJyPjwvaDI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImxlYWQiPkluIEphcGFuIGZhcm1lcnMgYXJlIGFibGUgdG8gZ3JvdyBzb21lIGNyb3BzIGxpa2UgdG9tYXRvZXMgdGhyb3VnaG91dCB0aGUgeWVhciBhcyBncmVlbmhvdXNlIHVzZSBpcyBjb21tb24uIEFzIHN1Y2ggdGhleSBjYW4gcGxhbiBmYXJtaW5nIGN5Y2xlIGZvciBvcHRpbWFsIHlpZWxkIGlycmVsZXZhbnQgb2Ygc2Vhc29uLiBUaGUgcHJlZGljdG9yIGhlbHBzIGVzdGltYXRlIGRlbWFuZHMgYW5kIG1hcmtldCBwcmljZSB1c2luZyBwYXN0IGRhdGEuPGJyPlRoaXMgcHJvamVjdCB3YXMgc2VsZWN0ZWQgYXMgYSB3aW5uZXIgYnkgSUJNIGluY3ViYXRpb24gcHJvZ3JhbSBhbmQgZmluYWxseSBhY3F1aXJlZCBieSBTb2Z0YmFuay4gKDxhIGhyZWY9Imh0dHBzOi8vd3d3Lm1hZmYuZ28uanAvai9zZWlzYW4vZ2l6eXV0dS9odWt5dS9oX2V2ZW50L2F0dGFjaC9wZGYvc21hZm9ydW0tNDgucGRmIj5wcmVzcyByZWxlYXNlPC9hPiBieSBKYXBhbiBNaW5pc3RyeSBvZiBBZ3JpY3VsdHVyZSwgaW4gSmFwYW5lc2UpPGJyPjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJzd2l0Y2hhYmxlIGZlYXR1cmUtbGFyZ2UiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3cganVzdGlmeS1jb250ZW50LWJldHdlZW4gYWxpZ24taXRlbXMtY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTYgY29sLTEyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InZpZGVvLWNvdmVyIGJvcmRlci0tcm91bmQgYm94LXNoYWRvdy13aWRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiYWNrZ3JvdW5kLWltYWdlLWhvbGRlciI+IDxpbWcgYWx0PSJpbWFnZSIgc3JjPSJpbWcvcmNleWUucG5nIj4gPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmlkZW8tcGxheS1pY29uIj48L2Rpdj4gPGlmcmFtZSBkYXRhLXNyYz0iaHR0cHM6Ly93d3cueW91dHViZS5jb20vZW1iZWQvc2tnSU1Za2xkV3M/YXV0b3BsYXk9MSIgYWxsb3dmdWxsc2NyZWVuPSJhbGxvd2Z1bGxzY3JlZW4iPjwvaWZyYW1lPiA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC02IGNvbC1sZy01Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN3aXRjaGFibGVfX3RleHQiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5TbWFydGhvbWUgc3lzdGVtPGJyPjwvaDI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImxlYWQiPkFuIGFwcCB0byBtYW5pcHVsYXRlIGhvbWUgYXBwbGlhbmNlcyBhcyB3ZWxsIGFzIG1vbml0b3JpbmcgdGhlIHN1cnJvdW5kaW5ncyByZW1vdGVseSwgZGV2ZWxvcGVkIGJlZm9yZSBJT1QgYmVjYW1lIGEgd29yZC4gVXNlcnMgY2FuIGFsc28gY29tbXVuaWNhdGUgdGhyb3VnaCBkZXZpY2VzIGxpa2UgYSBwaG9uZS4gPGJyPjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJiZy0tc2Vjb25kYXJ5Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icm93IHRleHQtYmxvY2siPgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtbWQtMTIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgzPkFydGljbGVzPGJyPjwvaDM+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC00Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhcnRpY2xlIGNsYXNzPSJmZWF0dXJlIGZlYXR1cmUtMSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3M9ImJsb2NrIj4gPGltZyBhbHQ9IkltYWdlIiBzcmM9ImltZy9zY2FsYV9mdXR1cmUuanBnIj4gPC9hPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZlYXR1cmVfX2JvZHkgYm94ZWQgYm94ZWQtLWJvcmRlciI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNT5GdXR1cmVzIE1hZGUgRWFzeSB3aXRoIFNjYWxhPC9oNT4gPGEgaHJlZj0iaHR0cHM6Ly9tZWRpdW0uY29tL2ZyZWUtY29kZS1jYW1wL2Z1dHVyZXMtbWFkZS1lYXN5LXdpdGgtc2NhbGEtZGExYmViM2JiMjgxIiB0YXJnZXQ9Il9zZWxmIj4KCQkJCQkJCVJlYWQgTW9yZQoJCQkJCQk8L2E+IDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hcnRpY2xlPgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTQiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGFydGljbGUgY2xhc3M9ImZlYXR1cmUgZmVhdHVyZS0xIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSIjIiBjbGFzcz0iYmxvY2siPiA8aW1nIGFsdD0iSW1hZ2UiIHNyYz0iaW1nL3ZlcnR4LmpwZyI+IDwvYT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmZWF0dXJlX19ib2R5IGJveGVkIGJveGVkLS1ib3JkZXIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDU+QW4gaW50cm9kdWN0aW9uIHRvIFZlcnQueCwgdGhlIGZhc3Rlc3QgSmF2YSBmcmFtZXdvcmsgdG9kYXk8L2g1PiA8YSBocmVmPSJodHRwczovL21lZGl1bS5jb20vZnJlZS1jb2RlLWNhbXAvYW4taW50cm9kdWN0aW9uLXRvLXZlcnQteC10aGUtZmFzdGVzdC1qYXZhLWZyYW1ld29yay10b2RheS0yN2Q4NjYxY2ViMTQiIHRhcmdldD0iX3NlbGYiPgoJCQkJCQkJUmVhZCBNb3JlCgkJCQkJCTwvYT4gPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2FydGljbGU+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtbWQtNCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YXJ0aWNsZSBjbGFzcz0iZmVhdHVyZSBmZWF0dXJlLTEiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzPSJibG9jayI+IDxpbWcgYWx0PSJJbWFnZSIgc3JjPSJpbWcvYWtrYV9hY3Rvci5qcGciPiA8L2E+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmVhdHVyZV9fYm9keSBib3hlZCBib3hlZC0tYm9yZGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg1PklmIHlvdeKAmXJlIHN0aWxsIHVzaW5nIFN5bmNocm9uaXplZCwgeW91IHNob3VsZCB0cnkgQWtrYSBBY3RvciBpbnN0ZWFkIOKAlCBoZXJl4oCZcyB3aHk8L2g1PiA8YSBocmVmPSJodHRwczovL21lZGl1bS5jb20vZnJlZS1jb2RlLWNhbXAvc3RpbGwtdXNpbmctc3luY2hyb25pemVkLXRyeS1ha2thLWFjdG9yLWluc3RlYWQtYWMyZjJiMjJhOWVkIiB0YXJnZXQ9Il9zZWxmIj4KCQkJCQkJCVJlYWQgTW9yZQoJCQkJCQk8L2E+IDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hcnRpY2xlPgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTQiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGFydGljbGUgY2xhc3M9ImZlYXR1cmUgZmVhdHVyZS0xIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSIjIiBjbGFzcz0iYmxvY2siPiA8aW1nIGFsdD0iSW1hZ2UiIHNyYz0iaW1nL2Jsb2NrY2hhaW4uanBnIj4gPC9hPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZlYXR1cmVfX2JvZHkgYm94ZWQgYm94ZWQtLWJvcmRlciI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNT5JbnRyb2R1Y3Rpb24gdG8gQmxvY2toYWluPC9oNT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iY292ZXIgc3BhY2UtLWxnIHVucGFkLS1ib3R0b20gc3dpdGNoYWJsZSB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyBqdXN0aWZ5LWNvbnRlbnQtYmV0d2VlbiI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC02Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im10LS0yIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDE+Q29udGFjdCBtZTxicj48L2gxPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJsZWFkIj5JJ20gYXZhaWxhYmxlIGZvciBzb2Z0d2FyZSBkZXZlbG9wbWVudCBwcm9qZWN0cyBvciBjb25zdWx0YXRpb24uIEZlZWwgZnJlZSB0byBjb250YWN0IG1lLjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0ibGVhZCI+PGEgaHJlZj0ibWFpbHRvOm1hcnRpbkBtYmN1Lm1lIj5tYXJ0aW5AbWJjdS5tZTwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC02IGNvbC1sZy01Ij4gPGltZyBhbHQ9IkltYWdlIiBzcmM9ImltZy93aGl0ZS1pcGFkLW9uLXRoZS10YWJsZS1uZWFyLXNtYWxsLWNsZWFyLWdsYXNzLWphcnMtODAyNjQ5LmpwZyI+IDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyLTcgdGV4dC1jZW50ZXIteHMiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtc20tNiI+IDxzcGFuIGNsYXNzPSJ0eXBlLS1maW5lLXByaW50Ij7CqSA8c3BhbiBjbGFzcz0idXBkYXRlLXllYXIiPjIwMjA8L3NwYW4+Jm5ic3A7IG1iY3UubWUg4oCUIEFsbCBSaWdodHMgUmVzZXJ2ZWQ8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtc20tNiB0ZXh0LXJpZ2h0IHRleHQtY2VudGVyLXhzIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1bCBjbGFzcz0ic29jaWFsLWxpc3QgbGlzdC1pbmxpbmUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vaW5teXRoIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9InNvY2ljb24gaWNvbiBzb2NpY29uLWdpdGh1YiBpY29uLS14cyI+PC9pPjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJodHRwczovL3N0YWNrb3ZlcmZsb3cuY29tL3VzZXJzLzEwMTQ0MTMvaW5teXRoIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9InNvY2ljb24gaWNvbiBzb2NpY29uLXN0YWNrb3ZlcmZsb3cgaWNvbi0teHMiPjwvaT48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL21hcnRpbmJjdS8iIHRhcmdldD0iX2JsYW5rIj48aSBjbGFzcz0ic29jaWNvbiBpY29uIHNvY2ljb24tbGlua2VkaW4gaWNvbi0teHMiPjwvaT48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZm9vdGVyPgogICAgICAgIDwvZGl2PgogICAgICAgIDxzY3JpcHQgc3JjPSJqcy9qcXVlcnktMy4xLjEubWluLmpzIj48L3NjcmlwdD4KICAgICAgICA8c2NyaXB0IHNyYz0ianMvcGFyYWxsYXguanMiPjwvc2NyaXB0PgogICAgICAgIDxzY3JpcHQgc3JjPSJqcy9zbW9vdGgtc2Nyb2xsLm1pbi5qcyI+PC9zY3JpcHQ+CiAgICAgICAgPHNjcmlwdCBzcmM9ImpzL3NjcmlwdHMuanMiPjwvc2NyaXB0PgoKICAgIDwvYm9keT4KCjwvaHRtbD4=" alt=""><br>Functional approach helps us visualize the solution as a series of discrete controls, even if the underlying events are asynchronous. So if data is a river, the solution would be dams. In fact it is quite common to refer to such paradigm as stream.<br> <br>Here are some of the advantages it brings. <br></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large bg--secondary">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder"> <img alt="image" src="img/Screenshot_2020-04-10 Streaming vs Reading.png"> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="https://www.youtube.com/embed/HJOdIHbLXW0?autoplay=1" allowfullscreen="allowfullscreen"></iframe> </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Memory efficiency<br></h2>
+                                <p class="lead">One immediate issue of working with big data is that there is no machine with memory large enough to load it. What people often do is break up the data to smaller chunks which in turn causes management headache. <br><br>This video compares the old approach and the new functional stream with Java Vavr to load a very large file. In the first part, all available memory is quickly&nbsp; consumed and the program crashes. But in the second, memory consumption is kept under control. This allows us to use a small machine to process very large data. <br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large bg--secondary">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder"> <img alt="image" src="img/function.jpg"> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="http://webmshare.com/play/Pxd60" allowfullscreen="allowfullscreen"></iframe> </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Spot recovery<br></h2>
+                                <p class="lead"> Imagine doing a thousand of database queries or API calls and a network failure occurs. Almost all the time this will end in the whole process being restarted, wasting hours if not days.&nbsp;<br><br>Modern reactive libraries like Monix have a functionality to do spot recovery. The video here shows how a list of five elements is streamed. The program retries a failed process at most three times or it will give up and proceed to the next element (<a href="https://gist.github.com/inmyth/7e1647022370dca5b553a090ac4d2b94">source code</a>). Such recovery strategy would have been very hard to implement without functional approach. <br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>Projects</h2>
+                            <p class="lead">Some projects I did in the past. <br></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large switchable--switch">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder"> <img alt="image" src="img/market_make.png"> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="https://www.youtube.com/embed/dth4D28p4zk?autoplay=1" allowfullscreen="allowfullscreen"></iframe> </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Market-making bots<br></h2>
+                                <p class="lead"> Market making is a trading technique that places buy and sell orders continuously and profits from bid-offer spread. Automating the trades is the job for bot. <br>These bots were developed to trade cryptocurrencies, <a href="https://github.com/inmyth/mmm-java">one</a> to operate on Ripple network and <a href="https://github.com/inmyth/akka-integrated-mmm">one</a> on centralized exchanges such as HitBTC and Okex.&nbsp; <br>The video here illustrates the bot's balance during the operation on Ripple network . It starts from seeding and moves on to countering and replacing consumed offers. <br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder"> <img alt="image" src="img/martiply.png"> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="https://www.youtube.com/embed/FlbnG9Ae2Ao?autoplay=1" allowfullscreen="allowfullscreen"></iframe> </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Item discovery app</h2>
+                                <p class="lead">App to searche for a product or service in an area. The app integrates Android client, backend service, and various cloud components. Behind the scene the system makes good use of relational database and the&nbsp; new MySql spatial feature that allows query by coordinates . <br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large switchable--switch">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder"> <img alt="image" src="img/terrace_mile.png"> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="https://www.youtube.com/embed/XZYG00HbdAI?autoplay=1" allowfullscreen="allowfullscreen"></iframe> </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Harvest yield predictor <br></h2>
+                                <p class="lead">In Japan farmers are able to grow some crops like tomatoes throughout the year as greenhouse use is common. As such they can plan a farming schedule regardless of season. The predictor helps estimate demands and market price using past data for optimum profit.<br>This project was selected as a winner by IBM incubation program and finally acquired by Softbank. (<a href="https://www.maff.go.jp/j/seisan/gizyutu/hukyu/h_event/attach/pdf/smaforum-48.pdf">press release</a> by Japan Ministry of Agriculture, in Japanese)<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder"> <img alt="image" src="img/rceye.png"> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="https://www.youtube.com/embed/skgIMYkldWs?autoplay=1" allowfullscreen="allowfullscreen"></iframe> </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Smarthome system<br></h2>
+                                <p class="lead">An Android app to manipulate home appliances as well as monitoring the surroundings remotely, developed before IOT became a word. Users can also communicate between camera and the phone. <br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--secondary">
+                <div class="container">
+                    <div class="row text-block">
+                        <div class="col-md-12">
+                            <h3>Articles, Blogs<br></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                                <a href="#" class="block"> <img alt="Image" src="img/scala_future.jpg"> </a>
+                                <div class="feature__body boxed boxed--border">
+                                    <h5>Futures Made Easy with Scala</h5> <a href="https://medium.com/free-code-camp/futures-made-easy-with-scala-da1beb3bb281" target="_self">
+							Read More
+						</a> </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                                <a href="#" class="block"> <img alt="Image" src="img/vertx.jpg"> </a>
+                                <div class="feature__body boxed boxed--border">
+                                    <h5>An introduction to Vert.x, the fastest Java framework today</h5> <a href="https://medium.com/free-code-camp/an-introduction-to-vert-x-the-fastest-java-framework-today-27d8661ceb14" target="_self">
+							Read More
+						</a> </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                                <a href="#" class="block"> <img alt="Image" src="img/akka_actor.jpg"> </a>
+                                <div class="feature__body boxed boxed--border">
+                                    <h5>If you’re still using Synchronized, you should try Akka Actor instead — here’s why</h5> <a href="https://medium.com/free-code-camp/still-using-synchronized-try-akka-actor-instead-ac2f2b22a9ed" target="_self">
+							Read More
+						</a> </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                                <a href="#" class="block"> <img alt="Image" src="img/blockchain.jpg"> </a>
+                                <div class="feature__body boxed boxed--border">
+                                    <h5>Introduction to Blockchain</h5>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cover space--lg unpad--bottom switchable text-center">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <div class="mt--2">
+                                <h1>Contact me<br></h1>
+                                <p class="lead">I'm available for software development projects or consultation. Feel free to contact me.</p>
+                                <p class="lead"><a href="mailto:martin@mbcu.me">martin@mbcu.me</a></p>
+								<ul class="social-list list-inline">
+									<li><a href="https://github.com/inmyth" target="_blank"><i class="socicon icon socicon-github icon--xs"></i></a></li>
+									<li><a href="https://stackoverflow.com/users/1014413/inmyth" target="_blank"><i class="socicon icon socicon-stackoverflow icon--xs"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/martinbcu/" target="_blank"><i class="socicon icon socicon-linkedin icon--xs"></i></a></li>
+								</ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5"> <img alt="Image" src="img/white-ipad-on-the-table-near-small-clear-glass-jars-802649.jpg"> </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-7 text-center-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6"> <span class="type--fine-print">© <span class="update-year">2020</span>&nbsp; mbcu.me — All Rights Reserved</span>
+                        </div>
+                    </div>
+                </div>
             </footer>
-        </section>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-137898728-1', 'auto'); ga('send', 'pageview');
+        </script>
 
-        <!-- Copyright -->
-        <div class="copyright ">&copy; mbcu.me . All rights reserved. Credit to <a href="https://html5up.net ">HTML5 UP</a> for the cool website.</div>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js "></script>
-    <script src="assets/js/jquery.scrolly.min.js "></script>
-    <script src="assets/js/browser.min.js "></script>
-    <script src="assets/js/breakpoints.min.js "></script>
-    <script src="assets/js/util.js "></script>
-    <script src="assets/js/main.js "></script>
-
-</body>
+    </body>
 
 </html>
