@@ -1,3 +1,10 @@
+###
+To work
+- use variant builder in template folder
+- export as .html and .variant
+- save .variant as is in project folder
+- copy .html as index.html, and add these things below manually
+
 ### Add this manually
 
 Add in head
@@ -8,6 +15,7 @@ Add in head
 
 Main badges 
 ```
+<p></p>
 <div class="row align-items-center">
 	<div class="col-md-6 col-6">
 		<p> <a target="_blank" href="https://stackoverflow.com/users/1014413/inmyth"><img src="https://stackoverflow.com/users/flair/1014413.png" width="208" height="58" alt="profile for inmyth at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for inmyth at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a></p>
@@ -16,6 +24,7 @@ Main badges
 		<p><a target="_blank" href="https://www.youracclaim.com/badges/3c2268c1-abbc-4bc3-8ad0-d8fa3204318a"><img border="0" alt="Oracle Associate" src="img/Oracle-Certification-badge_OC-Associate.png" width="auto" height="100"></a></p>
 	</div>
 </div>
+<p></p>
 ```
 
 
