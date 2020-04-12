@@ -7,6 +7,8 @@ To work
 
 ### Add this manually
 
+Remove social links in footer
+
 Add in head
 ```
 <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
