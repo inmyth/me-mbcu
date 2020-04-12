@@ -1,4 +1,8 @@
 ###
+Don't use variant builder but edit the html directly. 
+There are many elements which can only be added manually.
+
+###
 To work
 - use variant builder in template folder
 - export as .html and .variant
