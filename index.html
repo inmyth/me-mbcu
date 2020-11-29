@@ -27,7 +27,7 @@
                                 <div class="col-md-12">
                                     <div class="article__title">
                                         <h1>Martin Utama</h1> 
-										<h4> Full-stack Software Engineer </h4> </div>
+										<h4>Portfolio</h4> </div>
 										<ul class="social-list list-inline">
 											<li><a href="https://github.com/inmyth" target="_blank"><i class="socicon icon socicon-github icon--xs"></i></a></li>
 											<li><a href="https://stackoverflow.com/users/1014413/inmyth" target="_blank"><i class="socicon icon socicon-stackoverflow icon--xs"></i></a></li>
@@ -42,21 +42,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8">
                                     <div class="article__body">
-                                        <p>I'm a full-stack software engineer based in Japan. My specialization is functional programming and concurrency.</p>
-                                        <h5><b>What does it mean ?</b></h5>
-                                        <p>In a short way, by using functional approach I work to improve software that suffers from poor performance, maintainability, and inability to scale. For example, a backend service that breaks down due to massive amount of incoming data or a web server that fails to cope with a large number of requests.
-										
-										</p>                           
-										<div class="row text-center align-items-center">
-											<div class="feature col-md-4 col-lg-4">
-												<p><a target="_blank" href="https://stackoverflow.com/users/1014413/inmyth"><img src="https://stackoverflow.com/users/flair/1014413.png" width="208" height="58" alt="profile for inmyth at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for inmyth at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a></p>
-											</div>
-											<div class="feature  col-md-4 col-lg-4">
-												<p><a target="_blank" href="https://www.youracclaim.com/badges/3c2268c1-abbc-4bc3-8ad0-d8fa3204318a"><img border="0" alt="Oracle Associate" src="img/Oracle-Certification-badge_OC-Associate.png" width="auto" height="100"></a></p>
-											</div>
-										</div>															
-										<p>I code in Scala, Java, and Javascript. Over the years I have also developed Android, web, cryptocurrency applications, among other things. Feel free to contact me to see how I can help you. </p>
-                                    
+                                        <p>Hi. I'm Martin a software engineer based in Japan.</p>
+										<p>My experience consists of mobile, front-end, back-end, and cloud development with curent interest in functional programming.</p>
 										<a class="btn btn--primary" href="mailto:martin@mbcu.me">
 											<span class="btn__text type--uppercase">Contact me</span>
 										</a>
@@ -71,8 +58,22 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-lg-8">
-                            <h2>Why functional ?<br></h2>
-                            <p class="lead">In today's world data is central to any software application. Especially as needs for machine learning application speed up like never before. <br><br>It's also presenting us with engineering issues we didn't foresee. Storing, transferring, transforming data of enormous scale can no longer be done with imperative approach which heavily uses mutable states. As it happens having such states on modern computers with many cores and on massive amount of data would generally lead to untraceable bugs and code disorganization.&nbsp; <br><br>Functional approach helps visualize a solution as a series of discrete, stateless controls. So if data is a river, the solution would be a series of dams. In fact functional data processing is often referred to as stream. <br> <br>To illustrate the advantages here are a few scenarios written in Scala and Java.<br></p>
+                            <h2>Why do you need Functional Programming ?<br></h2>
+							<p class="lead"><b>It reduces bugs</b></p>
+							<p class="lead">Whatever the language, the most dangerous source of bugs is mutable states. Think class or object variables. What is the problem with states ? 
+							They can pass all the tests, but during runtime we cannot know if they behave correctly. Especially if the software runs in multi-threaded environment.
+							As such when error happens such software is very difficult to debug. 
+							The foundation of FP is pure functions. They do not produce side-effects nor alter any state. So the result is predictable. We can be sure what we have in production is reflected by the local test.
+							</p>			
+							<p class="lead"><b>Scalability !</b></p>
+							<p class="lead">These days anyone can complete a software project quickly. But usually afer the first version, the development pace slows down to a slog with more modifications and features.
+							Why does this happen ? Because developers need to dig deep into the codes to make the change, and to make sure the change does not break other things. 
+							In Functional programming functions behave like Lego blocks. We can easily extend it or replace it. We can also easily test it. It's pretty common to have amazing test coverage with FP.
+							So to sum it, FP offers scalability. The complexity of the development would remain constant even if the software itself grows.
+							</p>	
+							<p class="lead"><b>Suitable for Big Data</b></p>
+							<p class="lead">In today's world data is central to any software application. It's also presenting us with engineering issues we didn't foresee. Storing, transferring, transforming data of enormous scale would lead to many issues. 
+							Here are a couple scenarios written in Scala and Java how FP solves some of them.<br></p>
 							<hr>
 
 						</div>
@@ -119,8 +120,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-lg-8">
-                            <h2>Projects</h2>
-                            <p class="lead">Some of the software development projects I did<br></p>
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			<section class="switchable feature-large">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder"> <img alt="image" src="img/martiply.png"> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="https://webmshare.com/play/6VyLV" allowfullscreen="allowfullscreen"></iframe> </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Blue-collar profile app</h2>
+                                <p class="lead">An app to showcase skills and certifications of trade workers. We are experimenting with traditional Scala server or Scala.js on AWS Lambda on the backend. The mobile app is written in Flutter.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
