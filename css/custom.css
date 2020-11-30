@@ -1,1 +1,11 @@
 /*! Place your custom styles here */
+
+.lead {
+  font-weight: 400;
+  color: #323232;
+}
+
+article .article__body p{
+  font-weight: 400;
+  color: #323232;
+}

@@ -11,8 +11,7 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,700" rel="stylesheet" type="text/css">
-        <link href="css/font-sourcesanspro.css" rel="stylesheet" type="text/css">
+
 
     </head>
     <body data-smooth-scroll-offset="77">
@@ -42,12 +41,12 @@
                             <div class="row justify-content-center text-center">
                                 <div class="col-md-10 col-lg-8">
                                     <div class="article__body">
-                                        <p>Hi. I'm Martin and this is my portfolio page.</p>
+                                        <p>Hi. I'm Martin. Welcome to my portfolio page.</p>
 										<p>I'm a software engineer experienced in mobile, web, server, and cloud development.
-										I code in many languages from Java, Javascript, Dart but my favorite is Scala. I'm passionate about functional programming so please read about why you need it below.</p>
-										<p>Currently I'm working to develop a backend with serverless technology. Because I'm not happy with Javascript or Python which are commonly used in serverless, 
+										I code in many languages from Java, Javascript, Dart but my favorite is Scala. I'm an enthusiast of functional programming so please read about why you need it below.</p>
+										<p>Currently I'm working to develop a backend with serverless technology. Because I'm not happy with Javascript and Python which are commonly used in serverless, 
 										I'm experimenting with Graal/Substrate VM and Scala.js to find a good alternative.</p>										
-										<p>Please have a look at my projects below. Or contact me to see how I can help you.</p>
+										<p>Please have a look at my projects. Or contact me to see how I can help you.</p>
 										<a class="btn btn--primary" href="mailto:martin@mbcu.me">
 											<span class="btn__text type--uppercase">Contact me</span>
 										</a>
@@ -64,15 +63,15 @@
                         <div class="col-md-10 col-lg-8">
                             <h2>Why do you need Functional Programming ?<br></h2>
 							<p class="lead"><b>Fewer bugs</b></p>
-							<p class="lead">Whichever the language, the most dangerous and expensive source of bugs is mutable states. These are class or object variables which are altered by some methods. What is the problem with states ? 
-							Even if they are correctly tested during local tests we cannot know if they behave correctly during runtime, especially if it's multi-threaded environment.
-							As a result such software is very difficult to debug. And unfortunately states are very common in imperative language which depends on object oriented design. 
+							<p class="lead">Whichever the language, the most dangerous source of bugs is mutable states. These are class or object variables which are altered by some methods. So what's the problem here ? 
+							The problem is even if they pass local tests we cannot know if they behave correctly during runtime, especially if the runtime is multi-threaded.
+							As a result such software is very difficult, and expensive, to debug. And unfortunately states are very common in imperative and object oriented languages. 
 							On the other hand the foundation of FP is pure functions. They do not alter states or produce side-effects. So the result is predictable. We can be sure what we have during local tests is reflected during runtime.
 							</p>			
 							<p class="lead"><b>Scalability</b></p>
-							<p class="lead">These days anyone can complete a software project quickly. But usually afer the first version the speed gets slower and slower along with more modifications and features.
+							<p class="lead">These days anyone can complete a software project quickly. But usually afer the first version the speed gets slower and slower with more modifications and features.
 							Why does this happen ? Because developers need to dig deep into the codes to make the change, and to make sure it does not break other things. 
-							In FP functions are pure so they can be arranged like Lego blocks. We can easily extend or replace them. The complexity of the development would remain constant even if the software itself is not.
+							Because FP functions are pure they can be arranged like Lego blocks. We can easily extend or replace them. The complexity of the development would remain constant even if the software itself is not.
 							</p>	
 							<p class="lead"><b>Suitable for Big Data</b></p>
 							<p class="lead">In today's world data is central to any application. It's also presenting us with new issues: storing, transferring, transforming which cannot be solved easily due to the data size. 
@@ -128,18 +127,38 @@
                     </div>
                 </div>
             </section>
-			<section class="switchable feature-large">
+			<section class="switchable feature-large switchable--switch">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-6 col-12">
                             <div class="video-cover border--round box-shadow-wide">
                                 <div class="background-image-holder"> <img alt="image" src="img/kerahbiru_proto.png"> </div>
-                                <div class="video-play-icon"></div> <iframe data-src="https://webmshare.com/play/6VyLV" allowfullscreen="allowfullscreen"></iframe> </div>
+                                <div class="video-play-icon"></div> <iframe data-src="https://webmshare.com/play/6VyLV" allowfullscreen="allowfullscreen"></iframe> 
+							</div>
                         </div>
                         <div class="col-md-6 col-lg-5">
                             <div class="switchable__text">
                                 <h2>Blue-collar profile app</h2>
                                 <p class="lead">An app to showcase skills and qualifications of trade workers. We are experimenting with several choices for backend: traditional Scala server, Java native image built by Substrate VM, or Scala.js which is Javascript with Scala syntax. The mobile app is written in Flutter.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			
+			<section class="switchable feature-large">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-12">
+                            <a href="https://www.covidwatch.org"><img alt="Image" class="border--round box-shadow-wide" src="img/covidwatch.png" /></a>
+
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Covid Watch</h2>
+                                <p class="lead"><a href="https://en.wikipedia.org/wiki/Covid_Watch">Covid Watch</a> is a volunteer group developing a Covid-19 contact-tracing application based on TCN protocol. The goal is to warn users of past contact with infected persons while protecting the privacy of anyone involved.
+								For a couple of months during the pandemic I served as a volunteer to work on the backend which at that time was built on Google serverless. 
+								</p>
                             </div>
                         </div>
                     </div>
