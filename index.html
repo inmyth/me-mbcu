@@ -65,18 +65,17 @@
                             <h2>Why do you need Functional Programming ?<br></h2>
 							<p class="lead"><b>Fewer bugs</b></p>
 							<p class="lead">Whichever the language, the most dangerous and expensive source of bugs is mutable states. These are class or object variables which are altered by some methods. What is the problem with states ? 
-							They can pass all the local tests but we cannot know if they behave correctly during runtime, especially if it's multi-threaded environment.
-							Because of that such software is very difficult to debug. 
-							The foundation of FP is pure functions. They do not alter any state or produce side-effect. So the result is predictable. We can be sure what we have during runtime is reflected by local tests.
+							Even if they are correctly tested during local tests we cannot know if they behave correctly during runtime, especially if it's multi-threaded environment.
+							As a result such software is very difficult to debug. And unfortunately states are very common in imperative language which depends on object oriented design. 
+							On the other hand the foundation of FP is pure functions. They do not alter states or produce side-effects. So the result is predictable. We can be sure what we have during local tests is reflected during runtime.
 							</p>			
 							<p class="lead"><b>Scalability</b></p>
-							<p class="lead">These days anyone can complete a software project quickly. But usually afer the first version the pace gets slower and slower to a slog along with more modifications and features.
-							Why does this happen ? Because developers need to dig deep into the codes to make the change, and to make sure the change does not break other things. 
-							Because in FP functions are pure they behave like Lego blocks. We can easily extend or replace them. We can also easily test it.
-							In other word FP offers scalability. The complexity of the development would remain constant even if the software itself grows.
+							<p class="lead">These days anyone can complete a software project quickly. But usually afer the first version the speed gets slower and slower along with more modifications and features.
+							Why does this happen ? Because developers need to dig deep into the codes to make the change, and to make sure it does not break other things. 
+							In FP functions are pure so they can be arranged like Lego blocks. We can easily extend or replace them. The complexity of the development would remain constant even if the software itself is not.
 							</p>	
 							<p class="lead"><b>Suitable for Big Data</b></p>
-							<p class="lead">In today's world data is central to any software application. It's also presenting us with new issues: storing, transferring, transforming which cannot be solved easily due to the data size. 
+							<p class="lead">In today's world data is central to any application. It's also presenting us with new issues: storing, transferring, transforming which cannot be solved easily due to the data size. 
 							Here are a couple scenarios where FP is useful to tackle memory and recovery problems.<br></p>
 							<hr>
 
