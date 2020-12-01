@@ -43,7 +43,7 @@
                                     <div class="article__body">
                                         <p>Hi. I'm Martin. Welcome to my portfolio page.</p>
 										<p>I'm a software engineer experienced in mobile, web, server, and cloud development.
-										I code in many languages from Java, Javascript, Dart but my favorite is Scala. Functional programming is a very exciting trend so please read about why you need it below.</p>
+										I code in many languages from Java, Javascript, Dart, etc. Right now though my favorite language is Scala. I think functional programming is a very exciting trend so please read about why you need it below.</p>
 										<p>Currently I'm working to develop a backend with Serverless technology. Because I'm not happy with Javascript and Python which are commonly used in Serverless, 
 										I'm experimenting with Java native image and Scala.js to find a good alternative.</p>										
 										<p>Please have a look at my projects. Or contact me to see how I can help you.</p>
@@ -61,16 +61,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-lg-8">
-                            <h2>Why do you need Functional Programming ?<br></h2>
+                            <h2>Why do you need Functional Programming (FP)?<br></h2>
 							<p class="lead"><b>Fewer bugs</b></p>
-							<p class="lead">Whichever the language, the most dangerous source of bugs is mutable states. These are class or object variables which are altered by methods. So what's the problem here ? 
+							<p class="lead">Whichever the language the most dangerous source of bugs is mutable states. These are class or object variables which are altered by some methods. So what's the problem here ? 
 							The problem is even if they pass local tests we cannot know if they behave correctly during runtime, especially if the runtime is multi-threaded.
 							As a result such software is very difficult, and expensive, to debug. And unfortunately states are very common in imperative and object oriented languages. 
 							On the other hand the foundation of FP is pure functions. They do not alter states or produce side-effects. So the result is predictable. We can be sure what we have during local tests is reflected during runtime.
 							</p>			
 							<p class="lead"><b>Scalability</b></p>
-							<p class="lead">These days anyone can complete a software project quickly. But usually afer the first version the speed gets slower and slower with more modifications and features.
-							Why ? Because developers need to dig deep into the codes to make the change, and to make sure it does not break other things. 
+							<p class="lead">These days anyone can complete a software project quickly. But usually after the first version the speed gets slower and slower with more modifications and features.
+							Why does this happen ? Because developers need to dig deep into the codes to make the change, and to make sure it does not break other things. 
 							In FP functions can be arranged like Lego blocks; we can easily extend or replace them. As a result the complexity of the development would remain constant even if the software itself is not.
 							</p>	
 							<p class="lead"><b>Suitable for Big Data</b></p>
@@ -93,7 +93,9 @@
                         <div class="col-md-6 col-lg-5">
                             <div class="switchable__text">
                                 <h2>Memory efficiency<br></h2>
-                                <p class="lead">One immediate issue of working with big data is that there is no machine with large enough memory to load it. What people often do is break up the data to smaller chunks which in turn causes management headache. <br><br>This video compares the old approach and the new functional stream with Java Vavr to load a very large file. In the first part, all available memory is quickly&nbsp; consumed and the program crashes. But in the second, memory consumption is kept under control. This allows us to use a small machine to process very large data. <br></p>
+                                <p class="lead">Typical computers have only 16GB of RAM, what if we need to load 1000GB of data ?  
+								Spawn more instances and break up the data ? This is costly and will create management headache.<br><br>The better alternative is to stream it. With stream we read the source up until it fills up a buffer, process it, send it to sink as final result before discarding it. 
+								The video here demonstrates functional Java Vavr to load a very large file. In the first part with the old approach, all available memory is quickly&nbsp; consumed and the program crashes. In the second, memory consumption is kept under control so we can use a cheap small machine to process very large data. <br></p>
                             </div>
                         </div>
                     </div>
@@ -110,9 +112,9 @@
                         <div class="col-md-6 col-lg-5">
                             <div class="switchable__text">
                                 <h2>Process recovery<br></h2>
-                                <p class="lead">Imagine doing a thousand of database queries or API calls and a network failure occurs. Almost all the time this will end in the whole process being restarted, wasting hours if not days.&nbsp;<br><br>Modern reactive libraries like Monix have a functionality to do task recovery. 
-								The video here shows a recovery simulation on a stream. For each element that encounters an error, it will retry at most three times or it will give up and proceed to the next element (<a href="https://gist.github.com/inmyth/7e1647022370dca5b553a090ac4d2b94">source code</a>). 
-								As a result we can now avoid restarting the entire process from the beginning. Using functional approach we can easily define many such strategies that would help recover a process.<br><br></p>
+                                <p class="lead">Imagine doing a thousand database queries and a failure occurs. Usually the only thing to do is re-run the program from the start, wasting a lot of time.&nbsp;<br><br>The good news is modern functional stream has already implemented the capabilities to save it. 
+								The video here shows a recovery simulation. For each element that encounters an error it will retry at most three times or it will give up and proceed to the next element (<a href="https://gist.github.com/inmyth/7e1647022370dca5b553a090ac4d2b94">source code</a>). 
+								Using functional approach we can easily define many such strategies that would help recover such a process, even if it's asynchronous.<br><br></p>
                             </div>
                         </div>
                     </div>
